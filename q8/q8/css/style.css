@@ -1,2 +1,20 @@
 @charset "UTF-8";
 
+.content{
+  height:500px;
+}
+.backgroundimg-1{
+  background: url(../../image/coffee-background.jpg);
+}
+
+.backgroundimg-2{
+  background: url(../../image/coffee-background.jpg) no-repeat;
+}
+
+.backgroundimg-3{
+  background: url(../../image/coffee-background.jpg) no-repeat center/cover;
+}
+
+.backgroundimg-4{
+  background: url(../../image/coffee-background.jpg) no-repeat center/contain;
+}

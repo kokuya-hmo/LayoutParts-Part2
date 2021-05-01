@@ -1,4 +1,128 @@
 @charset "UTF-8";
+/*Q1-Q3*/
+.green-box{
+  width:200px;
+  height:200px;
+  background:#76ff826b;
+  margin: 0 auto;
+}
 
-/* カード内の画像は以下のURLを使用して下さい */
-/* https://picsum.photos/id/1005/200/300 */
+.fade-in{
+  animation:fadeIn 4s ;
+}
+@keyframes fadeIn{
+  0% {opacity:0}
+  100% {opacity: 1}
+}
+
+.fade-out{
+  animation:fadeOut 4s;
+  animation-delay: 4s;
+}
+@keyframes fadeOut{
+  0%{opacity:1}
+  100%{opacity:0}
+}
+
+.box-rotation{
+  animation:spin 4s infinite;
+}
+@keyframes spin{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+/*Q1-Q3*/
+/*Q4-Q11*/
+.blue-box{
+  width:200px;
+  height:200px;
+  background: #331aefd0;
+  margin:0 auto;
+}
+.blue-box:hover{
+  transition-delay: 0.5s;
+}
+
+.color-change:hover{
+  background: #ff27e2c9;
+}
+
+.box-rotation2:hover{
+  transform: rotateZ(360deg);
+  transition: 4s;
+  transition-delay: 0.5s;
+}
+
+.box-move-top:hover{
+  transform:translate(0,-20%) ;
+}
+
+.box-move-right:hover{
+  transform:translate(20%,0);
+}
+
+.box-higher:hover{
+  transform: scale(1 , 1.5);
+}
+
+.box-wider:hover{
+  transform: scale(2.5 , 1);
+}
+
+.box-border:hover{
+  border: 10px #00ffe5 solid;
+  box-sizing: border-box;
+}
+
+.box-shadow:hover{
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+/*Q4-Q11*/
+/*Q12-Q13*/
+
+.circle-spin{
+  height:50px;
+  width:50px;
+  border: 10px #ecf1f2 solid;
+  border-top: 10px #14ff4bcd solid;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation:spin 1.1s linear infinite;
+}
+
+/*Q14*/
+.card-list{
+  display:flex;
+}
+.card-content{
+  width:300px;
+  padding:20px;
+  border:solid 1px #000;
+  border-left: 0;
+  background:#fff;
+  transition: 0.5s;
+}
+
+.card-content > p{
+  margin-top:20px;
+}
+
+.card-content:first-child{
+  border-left:1px solid #000;
+}
+
+.card-content:hover{
+  z-index: 1;
+  box-shadow: #424242d0 0px 0px 10px 3px;
+}
+
+.image-icon{
+  background-image: url(https://picsum.photos/id/1005/200/300);
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 100%;
+  margin:0 auto;
+}
+/*Q14*/
