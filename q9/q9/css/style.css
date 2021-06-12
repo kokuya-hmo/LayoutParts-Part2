@@ -38,19 +38,16 @@
   height:200px;
   background: #331aefd0;
   margin:0 auto;
+  transition: 0.5s;
 }
-.blue-box:hover{
-  transition-delay: 0.5s;
-}
+
 
 .color-change:hover{
   background: #ff27e2c9;
 }
 
 .box-rotation2:hover{
-  transform: rotateZ(360deg);
-  transition: 4s;
-  transition-delay: 0.5s;
+  transform:rotate(360deg)
 }
 
 .box-move-top:hover{
